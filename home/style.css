@@ -1,0 +1,119 @@
+/*==================for mobile========================*/
+@media screen and (max-width: 40rem) {
+  .topic h1 {
+    margin: 70px 20px 10px;
+    font-size: 18px;
+  }
+  .topic .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+  }
+  .topic .slide__img1 {
+    width: 25%;
+    height: 25%;
+  }
+  .topic .slide__img2 {
+    width: 25%;
+    height: 25%;
+  }
+  .topic .slide__img3 {
+    width: 25%;
+    height: 25%;
+  }
+  .topic .slide__img4 {
+    width: 25%;
+    height: 25%;
+  }
+  .topic .slide__img5 {
+    width: 25%;
+    height: 25%;
+  }
+  .topic .slide__img6 {
+    width: 25%;
+    height: 25%;
+  }
+  .topic .slide__img7 {
+    width: 25%;
+    height: 25%;
+  }
+  .topic .slide__img8 {
+    width: 25%;
+    height: 25%;
+  }
+  .topic .slide__img9 {
+    width: 25%;
+    height: 25%;
+  }
+  .personal_topic h1 {
+    font-size: 18px;
+    margin: 20px 20px;
+  }
+  .personal_topic .p-topic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 20px;
+  }
+  .personal_topic .p-topic__1 {
+    width: 35%;
+    height: 35%;
+  }
+  .personal_topic .p-topic__2 {
+    width: 35%;
+    height: 35%;
+  }
+  .howmany h1 {
+    font-size: 18px;
+    margin: 20px 20px;
+  }
+  .howmany .btn {
+    text-align: center;
+  }
+  .howmany .btn__liked {
+    font-size: 17px;
+    background-color: #07122a;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 284px;
+    height: 55px;
+  }
+  .howmany .btn__liked:hover {
+    opacity: 0.5;
+  }
+  footer {
+    margin-top: 50px;
+    background-color: #07122a;
+    height: 90px;
+  }
+  footer .ft__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 20px;
+  }
+  footer .ft__icon .icon--home {
+    opacity: 0.5;
+  }
+  footer .ft__icon .icon--post {
+    opacity: 0.5;
+  }
+  footer .ft__icon .icon--search {
+    opacity: 0.5;
+  }
+  footer .ft__icon .icon--user {
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=style.css.map */
