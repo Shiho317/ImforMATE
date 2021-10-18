@@ -11,54 +11,43 @@
   <title>ImforMATE</title>
 </head>
 <body>
-  <header>
-
-  </header>
+  <header></header>
   <main>
-    <div class="topic">
-      <h1>Topic</h1>
-      <div class="slide">
-        <img class="slide__img1" src="../src/img/topicicon-1.jpg" alt="exchange">
-        <img class="slide__img2" src="../src/img/topicicon-2.jpg" alt="money">
-        <img class="slide__img3" src="../src/img/topicicon-3.jpg" alt="spot">
-      </div><!--.slide1-->
-      <div class="slide">
-        <img class="slide__img4" src="../src/img/topicicon-4.jpg" alt="education">
-        <img class="slide__img5" src="../src/img/topicicon-5.jpg" alt="health">
-        <img class="slide__img6" src="../src/img/topicicon-6.jpg" alt="house">
-      </div><!--.slide2-->
-      <div class="slide">
-        <img class="slide__img7" src="../src/img/topicicon-7.jpg" alt="living">
-        <img class="slide__img8" src="../src/img/topicicon-8.jpg" alt="trip">
-        <img class="slide__img9" src="../src/img/topicicon-9.jpg" alt="others">
-      </div><!--.slide3-->
-    <div>
-      <button class="slider__btn slider__btn--left">&larr;</button>
-      <button class="slider__btn slider__btn--right">&rarr;</button>
-    </div>
-    </div><!--.topic-->
+    <div class="back__btn">
+      <a href="../home/index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#bdbdbd" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+      </svg>
+      </a>
+    </div><!--.back__btn-->
 
-    <div class="personal_topic">
-      <h1>Personal Topic</h1>
-      <div class="p-topic">
-        <img class="p-topic__1" src="../src/img/personal_topic-1.png" alt="post">
-        <img class="p-topic__2" src="../src/img/personal_topic-2.png" alt="liked">
-      </div><!--.p-topic-->
-    </div><!--.personal_topic-->
+    <div class="list">
+      <ul class="list__category">
+        <li class="spot">Spot</li>
+        <li class="education">Education</li>
+        <li class="health">Health</li>
+        <li class="house">House</li>
+        <li class="living">Living</li>
+        <li class="trip">Trip</li>
+        <li class="others">Others</li>
+      </ul><!--.list__category-->
+    </div><!--.list-->
 
-    <div class="howmany">
-      <h1>How many people did you help?</h1>
+    <div class="input">
+      <input class="comment" type="text" placeholder="Let's share your imformation now!">
+    </div><!--.input-->
 
-      <div class="btn">
-        <button class="btn__liked">See total LIKED</button>
-      </div><!--.button-->
-    </div><!--.howmany-->
+    <div class="provide">
+      <button class="provide__btn">Provide</button>
+    </div><!--.provide-->
+
   </main>
   <footer>
     <div class="ft__icon">
 
       <div class="icon--home active">
-        <a href="index.html">
+        <a href="../home/index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="33" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <polyline points="5 12 3 12 12 3 21 12 19 12" />
@@ -69,7 +58,7 @@
       </div><!--.icon--home-->
 
       <div class="icon--post active">
-        <a href="../post/index.html">
+        <a href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="33" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <circle cx="12" cy="12" r="9" />
@@ -98,7 +87,7 @@
         </svg>
         </a>
       </div><!--.icon--acc-->
-
+      
     </div><!--.ft__icon-->
   </footer>
   <script src="../src/share.js"></script>

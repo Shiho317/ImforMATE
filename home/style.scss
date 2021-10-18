@@ -76,11 +76,15 @@ $cGray: #bdbdbd;
       &__1{
         width: 35%;
         height: 35%;
+        border-radius: 14px;
+        box-shadow: 0 0 10px $cBlack;
       }
 
       &__2{
         width: 35%;
         height: 35%;
+        border-radius: 14px;
+        box-shadow: 0 0 10px $cBlack;
       }
     }
   }
@@ -124,18 +128,34 @@ footer{
 
       & .icon--home{
         opacity: 0.5;
+
+        &:hover{
+          opacity: 1;
+        }
       }
 
       & .icon--post{
         opacity: 0.5;
+
+        &:hover{
+          opacity: 1;
+        }
       }
 
       & .icon--search{
         opacity: 0.5;
+
+        &:hover{
+          opacity: 1;
+        }
       }
 
       & .icon--user{
-        opacity: 0.5;;
+        opacity: 0.5;
+
+        &:hover{
+          opacity: 1;
+        }
       }
     }
   }

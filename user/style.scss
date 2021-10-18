@@ -1,0 +1,221 @@
+$cBlack: #07122a;
+$cWhite: #ffffff;
+$cGray: #bdbdbd;
+
+/*==================for mobile========================*/
+@media screen and (max-width: 40rem){
+
+  body{
+    background-image: url(../src/img/bg__canada.jpg);
+    background-position: center;
+  }
+  .profile{
+    margin-top: 20%;
+    height: 72vh;
+
+    & .hello{
+      margin-top: 30px;
+
+      & h1{
+        font-size: 18px;
+        color: $cBlack;
+        margin-left: 20px;
+      }
+    }
+
+    &__icon{
+      margin-top: 70px;
+      display: block;
+      text-align: center;
+
+      & .icon__img{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border: 1px solid $cBlack;
+        border-radius: 50px;
+      }
+
+      & .icon__change{
+        
+        & .change{
+          font-size: 13px;
+          color: #817f7f;
+          background-color: transparent;
+          outline: none;
+          cursor: pointer;
+          border: none;
+          opacity: 0.5;
+
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &__data{
+      margin: 50px;
+
+      & .user_name{
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        border-bottom: 1px solid $cBlack;
+
+        & h6{
+          padding-top: 9px;
+          margin: 0;
+        }
+
+        & input{
+          margin: 0;
+          padding-top: 5px;
+          width: 165px;
+          height: 20px;
+          border: none;
+          outline: none;
+          background-color: transparent;
+        }
+      }
+
+      & .country{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 55px;
+        border-bottom: 1px solid $cBlack;
+
+        & h6{
+          padding-top: 9px;
+          margin: 0;
+        }
+
+        & input{
+          margin: 0;
+          padding-top: 5px;
+          width: 165px;
+          height: 20px;
+          border: none;
+          outline: none;
+          background-color: transparent;
+        }
+      }
+
+      & .city{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        border-bottom: 1px solid $cBlack;
+
+        & h6{
+          padding-top: 9px;
+          margin: 0;
+        }
+
+        & input{
+          margin: 0;
+          padding-top: 5px;
+          width: 165px;
+          height: 20px;
+          border: none;
+          outline: none;
+          background-color: transparent;
+        }
+      }
+
+      & .twitter{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        border-bottom: 1px solid $cBlack;
+
+        & h6{
+          padding-top: 9px;
+          margin: 0;
+        }
+
+        & input{
+          margin: 0;
+          padding-top: 5px;
+          width: 165px;
+          height: 20px;
+          border: none;
+          outline: none;
+          background-color: transparent;
+        }
+      }
+
+      & .profile__edit{
+        margin-top: 10px;
+        text-align: end;
+
+        & .edit{
+          font-size: 13px;
+          color: #817f7f;
+          background-color: transparent;
+          outline: none;
+          cursor: pointer;
+          border: none;
+          opacity: 0.5;
+
+          &:hover{
+            opacity: 1;
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+
+  footer{
+    margin-top: 62px;
+    background-color: $cBlack;
+    height: 90px;
+
+    & .ft__icon{
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
+
+      & .icon--home{
+        opacity: 0.5;
+
+        &:hover{
+          opacity: 1;
+      }
+    }
+
+    & .icon--post{
+      opacity: 0.5;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    & .icon--search{
+      opacity: 0.5;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    & .icon--user{
+      opacity: 0.5;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+}

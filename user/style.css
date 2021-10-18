@@ -1,0 +1,195 @@
+/*==================for mobile========================*/
+@media screen and (max-width: 40rem) {
+  body {
+    background-image: url(../src/img/bg__canada.jpg);
+    background-position: center;
+  }
+  .profile {
+    margin-top: 20%;
+    height: 72vh;
+  }
+  .profile .hello {
+    margin-top: 30px;
+  }
+  .profile .hello h1 {
+    font-size: 18px;
+    color: #07122a;
+    margin-left: 20px;
+  }
+  .profile__icon {
+    margin-top: 70px;
+    display: block;
+    text-align: center;
+  }
+  .profile__icon .icon__img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #07122a;
+    border-radius: 50px;
+  }
+  .profile__icon .icon__change .change {
+    font-size: 13px;
+    color: #817f7f;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    opacity: 0.5;
+  }
+  .profile__icon .icon__change .change:hover {
+    opacity: 1;
+  }
+  .profile__data {
+    margin: 50px;
+  }
+  .profile__data .user_name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 35px;
+    border-bottom: 1px solid #07122a;
+  }
+  .profile__data .user_name h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .profile__data .user_name input {
+    margin: 0;
+    padding-top: 5px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .profile__data .country {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 55px;
+    border-bottom: 1px solid #07122a;
+  }
+  .profile__data .country h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .profile__data .country input {
+    margin: 0;
+    padding-top: 5px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .profile__data .city {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 25px;
+    border-bottom: 1px solid #07122a;
+  }
+  .profile__data .city h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .profile__data .city input {
+    margin: 0;
+    padding-top: 5px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .profile__data .twitter {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #07122a;
+  }
+  .profile__data .twitter h6 {
+    padding-top: 9px;
+    margin: 0;
+  }
+  .profile__data .twitter input {
+    margin: 0;
+    padding-top: 5px;
+    width: 165px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .profile__data .profile__edit {
+    margin-top: 10px;
+    text-align: end;
+  }
+  .profile__data .profile__edit .edit {
+    font-size: 13px;
+    color: #817f7f;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    opacity: 0.5;
+  }
+  .profile__data .profile__edit .edit:hover {
+    opacity: 1;
+  }
+  footer {
+    margin-top: 62px;
+    background-color: #07122a;
+    height: 90px;
+  }
+  footer .ft__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 20px;
+  }
+  footer .ft__icon .icon--home {
+    opacity: 0.5;
+  }
+  footer .ft__icon .icon--home:hover {
+    opacity: 1;
+  }
+  footer .ft__icon .icon--post {
+    opacity: 0.5;
+  }
+  footer .ft__icon .icon--post:hover {
+    opacity: 1;
+  }
+  footer .ft__icon .icon--search {
+    opacity: 0.5;
+  }
+  footer .ft__icon .icon--search:hover {
+    opacity: 1;
+  }
+  footer .ft__icon .icon--user {
+    opacity: 0.5;
+  }
+  footer .ft__icon .icon--user:hover {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
