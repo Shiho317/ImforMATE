@@ -5,15 +5,23 @@ $cGray: #bdbdbd;
 @media screen and (max-width: 40rem){
 
   .topic{
+    width: 100%;
+    height: 15rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
     & h1{
       margin: 70px 20px 10px;
       font-size: 18px;
     }
 
     & .slide{
+      position: absolute;
       display: flex;
       justify-content: center;
       gap: 5px;
+      transition: transform 1s;
 
       &__img1{
         width: 25%;
@@ -60,9 +68,65 @@ $cGray: #bdbdbd;
         height: 25%;
       }
     }
+
+    & .slider__btn{
+      position: absolute;
+      top: 130px;
+      z-index: 10;
+
+      border: none;
+      background: rgba(211, 206, 206, 0.349);
+      font-family: inherit;
+      color: $cGray;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      font-size: 30px;
+      cursor: pointer;
+
+      }
+
+    & .slider__btn--left{
+      left: 2%;
+    }
+
+    & .slider__btn--right{
+      right: 2%;
+    }
+
+    & .dots{
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+    }
+
+    & .dots__dot{
+      border: none;
+      background-color: #b9b9b9;
+      opacity: 0.7;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      margin-right: 1.75rem;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:last-child{
+        margin: 0;
+      }
+
+      &--active{
+        background-color: #888;
+        opacity: 1;
+      }
+    }
   }
 
   .personal_topic{
+    margin-top: 80px;
+
     & h1{
       font-size: 18px;
       margin: 20px 20px;
@@ -90,7 +154,10 @@ $cGray: #bdbdbd;
   }
 
   .howmany{
+    margin-top: 85px;
+
     & h1{
+      text-align: center;
       font-size: 18px;
       margin: 20px 20px;
     }
@@ -117,6 +184,7 @@ $cGray: #bdbdbd;
   }
 
 footer{
+      
       margin-top: 50px;
       background-color: $cBlack;
       height: 90px;
