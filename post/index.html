@@ -15,27 +15,24 @@
   <main>
     <div class="back__btn">
       <a href="../home/index.html">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#bdbdbd" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="2.5" stroke="#D6D2D2" fill="none" class="duration-300 transform transition-all" style="width: 48px; height: 48px;"><path d="M45.15 57.47L19.88 30.84 45.15 6.58"></path></svg>
       </a>
     </div><!--.back__btn-->
 
     <div class="list">
-      <ul class="list__category">
-        <li class="spot">Spot</li>
-        <li class="education">Education</li>
-        <li class="health">Health</li>
-        <li class="house">House</li>
-        <li class="living">Living</li>
-        <li class="trip">Trip</li>
-        <li class="others">Others</li>
-      </ul><!--.list__category-->
+      <select name ="list__category" id="category">
+        <option value="spot">Spot</option>
+        <option value="education">Education</option>>
+        <option value="health">Health</option>
+        <option value="house">House</option>
+        <option value="living">Living</option>
+        <option value="trip">Trip</option>
+        <option value="others">Others</option>
+        </select><!--.list__category-->
     </div><!--.list-->
 
     <div class="input">
-      <input class="comment" type="text" placeholder="Let's share your imformation now!">
+      <input class="comment" type="text" placeholder="Let's share imformation!">
     </div><!--.input-->
 
     <div class="provide">
@@ -46,7 +43,7 @@
   <footer>
     <div class="ft__icon">
 
-      <div class="icon--home active">
+      <div class="icon--active">
         <a href="../home/index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="33" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -57,7 +54,7 @@
         </a>
       </div><!--.icon--home-->
 
-      <div class="icon--post active">
+      <div class="icon--btn">
         <a href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="33" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -68,7 +65,7 @@
         </a>
       </div><!--.icon--post-->
 
-      <div class="icon--search active">
+      <div class="icon--btn">
         <a href="../search/index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="33" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -78,7 +75,7 @@
         </a>
       </div><!--.icon--search-->
 
-      <div class="icon--user active">
+      <div class="icon--btn">
         <a href="../user/index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="33" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

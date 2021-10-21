@@ -5,69 +5,58 @@ $cGray: #bdbdbd;
 @media screen and (max-width: 40rem){
 
   .back__btn{
+    position: relative;
+    top: 20px;
+    left: 30px;
     &:hover{
       opacity: 0.5;
     }
   }
 
   .list{
-    &__category{
-      display: block;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    
+    &::before{
+      content:"";
+      display:block;
+      width:10px;
+      height:10px;
+      position:absolute;
+      left:20%;
+      top:40%;
+      border-bottom: $cWhite 2px solid;
+      border-right: $cWhite 2px solid;
+      transform:rotate(45deg)translateY(-30%);
+      }
+
+    & select{
+      appearance: none;
       text-align: center;
-      list-style: none;
+      width: 77%;
+      height: 56px;
+      padding: 5px 0px;
+      font-size: 22px;
+      border-radius: 7px;
+      border: none;
+      outline: none;
+      background: $cBlack;
       color: $cWhite;
-
-      & .spot{
-        background-color: #7e9c84;
-
-        &::before{
-          content: '';
-          width: 6px;
-          height: 6px;
-          border: 0;
-          border-top: solid 2px $cBlack;
-          border-right: solid 2px $cBlack;
-          position: absolute;
-          left: 10%;
-          top: 13px;
-          transform: rotate(135deg);
-        }
-      }
-
-      & .education{
-        background-color: #d1d1b5;
-      }
-
-      & .health{
-        background-color: #adccc6;
-      }
-
-      & .house{
-        background-color: #b68f8f;
-      }
-
-      & .living{
-        background-color: #dbc7d9;
-      }
-
-      & .trip{
-        background-color: #cbaf9c;
-      }
-
-      & .others{
-        background-color: #929090;
-      }
     }
   }
 
   .input{
+    position: relative;
+    top: 80px;
     display: block;
     text-align: center;
 
     & .comment{
       padding: 200px 70px;
-      background-color: #f5f5f7;
+      background-color:#7e9c84;
       border: none;
+      outline: none;
       border-radius: 15px;
       box-shadow: 0 0 10px #475166;
     }
@@ -77,7 +66,7 @@ $cGray: #bdbdbd;
     display: block;
     text-align: right;
     position: relative;
-    top: 30px;
+    top: 100px;
     right: 45px;
 
     &__btn{
@@ -99,6 +88,9 @@ $cGray: #bdbdbd;
     
 
   footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     margin-top: 50px;
     background-color: $cBlack;
     height: 90px;
@@ -108,34 +100,10 @@ $cGray: #bdbdbd;
       justify-content: space-around;
       padding-top: 20px;
 
-      & .icon--home{
+      & .icon--btn{
         opacity: 0.5;
-
-        &:hover{
-          opacity: 1;
-        }
-      }
-
-      & .icon--post{
-        opacity: 0.5;
-
-        &:hover{
-          opacity: 1;
-        }
-      }
-
-      & .icon--search{
-        opacity: 0.5;
-
-        &:hover{
-          opacity: 1;
-        }
-      }
-
-      & .icon--user{
-        opacity: 0.5;
-
-        &:hover{
+  
+        &--active{
           opacity: 1;
         }
       }

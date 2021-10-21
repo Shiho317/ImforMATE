@@ -193,39 +193,14 @@ footer{
       display: flex;
       justify-content: space-around;
       padding-top: 20px;
+    }
 
-      & .icon--home{
-        opacity: 0.5;
+    & .icon--btn{
+      opacity: 0.5;
 
-        &:hover{
-          opacity: 1;
-        }
-      }
-
-      & .icon--post{
-        opacity: 0.5;
-
-        &:hover{
-          opacity: 1;
-        }
-      }
-
-      & .icon--search{
-        opacity: 0.5;
-
-        &:hover{
-          opacity: 1;
-        }
-      }
-
-      & .icon--user{
-        opacity: 0.5;
-
-        &:hover{
-          opacity: 1;
-        }
+      &--active{
+        opacity: 1;
       }
     }
   }
-    
 }

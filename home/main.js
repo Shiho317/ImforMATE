@@ -62,6 +62,24 @@ const slider = function(){
   btnRight.addEventListener('click', nextSlide);
   btnLeft.addEventListener('click', prevSlide);
 
+  btnRight.addEventListener('click', function(){
+    btnRight.style.backgroundColor = 'white';
+
+    setTimeout(() => {
+      btnRight.style.backgroundColor = 'rgba(211, 206, 206, 0.349)'
+    },400);
+  });
+
+  btnLeft.addEventListener('click', function(){
+    btnLeft.style.backgroundColor = 'white';
+
+    setTimeout(() => {
+      btnLeft.style.backgroundColor = 'rgba(211, 206, 206, 0.349)'
+    },400);
+  });
+
+
+
   dotContainer.addEventListener('click', function (e) {
     if (e.target.classList.contains('dots__dot')) {
       const { slide } = e.target.dataset;
@@ -71,3 +89,26 @@ const slider = function(){
   });
 }
 slider();
+
+
+
+//personal topic
+
+const topic1 = document.querySelector('.p-topic__1');
+console.log(topic1);
+topic1.addEventListener('click', function(){
+  topic1.style.boxShadow = 'none';
+});
+const topic2 = document.querySelector('.p-topic__2');
+console.log(topic2);
+topic2.addEventListener('click', function(){
+  topic2.style.boxShadow = 'none';
+});
+
+//btn liked
+
+const btnLiked = document.querySelector('.btn__liked');
+console.log(btnLiked);
+btnLiked.addEventListener('click', function(){
+  btnLiked.style.opacity = 0.5;
+});

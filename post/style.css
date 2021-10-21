@@ -1,56 +1,57 @@
 /*==================for mobile========================*/
 @media screen and (max-width: 40rem) {
+  .back__btn {
+    position: relative;
+    top: 20px;
+    left: 30px;
+  }
   .back__btn:hover {
     opacity: 0.5;
   }
-  .list__category {
-    display: block;
+  .list {
+    position: relative;
+    top: 50px;
     text-align: center;
-    list-style: none;
+  }
+  .list::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    border-bottom: #ffffff 2px solid;
+    border-right: #ffffff 2px solid;
+    -webkit-transform: rotate(45deg) translateY(-30%);
+            transform: rotate(45deg) translateY(-30%);
+  }
+  .list select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    text-align: center;
+    width: 77%;
+    height: 56px;
+    padding: 5px 0px;
+    font-size: 22px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background: #07122a;
     color: #ffffff;
   }
-  .list__category .spot {
-    background-color: #7e9c84;
-  }
-  .list__category .spot::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border: 0;
-    border-top: solid 2px #07122a;
-    border-right: solid 2px #07122a;
-    position: absolute;
-    left: 10%;
-    top: 13px;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
-  }
-  .list__category .education {
-    background-color: #d1d1b5;
-  }
-  .list__category .health {
-    background-color: #adccc6;
-  }
-  .list__category .house {
-    background-color: #b68f8f;
-  }
-  .list__category .living {
-    background-color: #dbc7d9;
-  }
-  .list__category .trip {
-    background-color: #cbaf9c;
-  }
-  .list__category .others {
-    background-color: #929090;
-  }
   .input {
+    position: relative;
+    top: 80px;
     display: block;
     text-align: center;
   }
   .input .comment {
     padding: 200px 70px;
-    background-color: #f5f5f7;
+    background-color: #7e9c84;
     border: none;
+    outline: none;
     border-radius: 15px;
     -webkit-box-shadow: 0 0 10px #475166;
             box-shadow: 0 0 10px #475166;
@@ -59,7 +60,7 @@
     display: block;
     text-align: right;
     position: relative;
-    top: 30px;
+    top: 100px;
     right: 45px;
   }
   .provide__btn {
@@ -77,6 +78,9 @@
     opacity: 0.5;
   }
   footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     margin-top: 50px;
     background-color: #07122a;
     height: 90px;
@@ -89,28 +93,10 @@
         justify-content: space-around;
     padding-top: 20px;
   }
-  footer .ft__icon .icon--home {
+  footer .ft__icon .icon--btn {
     opacity: 0.5;
   }
-  footer .ft__icon .icon--home:hover {
-    opacity: 1;
-  }
-  footer .ft__icon .icon--post {
-    opacity: 0.5;
-  }
-  footer .ft__icon .icon--post:hover {
-    opacity: 1;
-  }
-  footer .ft__icon .icon--search {
-    opacity: 0.5;
-  }
-  footer .ft__icon .icon--search:hover {
-    opacity: 1;
-  }
-  footer .ft__icon .icon--user {
-    opacity: 0.5;
-  }
-  footer .ft__icon .icon--user:hover {
+  footer .ft__icon .icon--btn--active {
     opacity: 1;
   }
 }

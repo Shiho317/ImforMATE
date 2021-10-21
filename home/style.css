@@ -177,28 +177,10 @@
         justify-content: space-around;
     padding-top: 20px;
   }
-  footer .ft__icon .icon--home {
+  footer .icon--btn {
     opacity: 0.5;
   }
-  footer .ft__icon .icon--home:hover {
-    opacity: 1;
-  }
-  footer .ft__icon .icon--post {
-    opacity: 0.5;
-  }
-  footer .ft__icon .icon--post:hover {
-    opacity: 1;
-  }
-  footer .ft__icon .icon--search {
-    opacity: 0.5;
-  }
-  footer .ft__icon .icon--search:hover {
-    opacity: 1;
-  }
-  footer .ft__icon .icon--user {
-    opacity: 0.5;
-  }
-  footer .ft__icon .icon--user:hover {
+  footer .icon--btn--active {
     opacity: 1;
   }
 }
