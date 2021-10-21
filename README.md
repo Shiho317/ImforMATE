@@ -1,1 +1,1 @@
-# ImforMATE
+# InforMATE
