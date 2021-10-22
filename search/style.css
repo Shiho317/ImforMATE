@@ -1,5 +1,13 @@
 /*==================for mobile========================*/
 @media screen and (max-width: 40rem) {
+  header {
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #ffffff86;
+  }
   .wantToKnow {
     position: relative;
     top: 50px;

@@ -1,16 +1,33 @@
 /*==================for mobile========================*/
 @media screen and (max-width: 40rem) {
+  body {
+    height: 100vh;
+  }
+  body header {
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #ffffff86;
+  }
+  body main {
+    height: 120%;
+  }
   .back__btn {
+    display: inline-block;
     position: relative;
+    width: 50px;
+    margin: 0;
     top: 20px;
-    left: 30px;
+    left: 10px;
   }
   .back__btn:hover {
     opacity: 0.5;
   }
   .list {
     position: relative;
-    top: 50px;
+    top: 30px;
     text-align: center;
   }
   .list::before {
@@ -43,24 +60,63 @@
   }
   .input {
     position: relative;
-    top: 80px;
+    top: 50px;
     display: block;
     text-align: center;
+    background-color: #ebd9d9;
+    border-radius: 35%;
   }
   .input .comment {
-    padding: 200px 70px;
+    width: 375px;
+    height: 400px;
     background-color: #7e9c84;
     border: none;
     outline: none;
-    border-radius: 15px;
-    -webkit-box-shadow: 0 0 10px #475166;
-            box-shadow: 0 0 10px #475166;
+    border-radius: 5% 50%;
+    -webkit-box-shadow: 0 0 5px #ebd9d9;
+            box-shadow: 0 0 5px #ebd9d9;
+  }
+  #preview {
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: 50px;
+  }
+  .file {
+    text-align: center;
+    position: relative;
+    top: 50px;
+  }
+  .file .photo {
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
+    padding: 10px 10px;
+  }
+  .file .photo input {
+    display: none;
+  }
+  .file .url {
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    cursor: pointer;
+    padding: 10px 10px;
+  }
+  .file .url input {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    outline: none;
+    border: #bdbdbd 1.5px solid;
   }
   .provide {
     display: block;
     text-align: right;
     position: relative;
-    top: 100px;
+    top: 120px;
     right: 45px;
   }
   .provide__btn {
@@ -73,15 +129,15 @@
     border-radius: 7px;
     width: 100px;
     height: 35px;
-  }
-  .provide__btn:hover {
-    opacity: 0.5;
+    -webkit-box-shadow: 0 0 5px #07122a;
+            box-shadow: 0 0 5px #07122a;
   }
   footer {
-    position: absolute;
-    width: 100%;
+    margin-top: 30px;
+    position: -webkit-sticky;
+    position: sticky;
     bottom: 0;
-    margin-top: 50px;
+    width: 100%;
     background-color: #07122a;
     height: 90px;
   }
