@@ -160,10 +160,13 @@ function greeting(){
 
   if(6 <= nowHour < 12){
     hello.textContent = 'Good morning, ';
-  }if(12 <= nowHour < 18){
+    console.log(hello.textContent);
+  }else if(12 <= nowHour < 18){
     hello.textContent = 'Good afternoon, ';
-  }if(18 <= nowHour || 0 <= nowHour < 6){
+    console.log(hello.textContent);
+  }else if(18 <= nowHour || 0 <= nowHour < 6){
     hello.textContent = 'Good evening, ';
+    console.log(hello.textContent);
   }
 }
 setInterval(greeting());

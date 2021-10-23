@@ -2,43 +2,43 @@
 
 //change background colour
 
-const comments = document.querySelector('.comment')
 const category = document.getElementById('category')
 const options = document.querySelectorAll('option')
 const list = document.querySelector('.list');
 const input = document.querySelector('.input');
+const bgInput = document.querySelector('.input__bg');
 
 category.addEventListener('change', () =>{
   console.log(category.value);
 
   if(category.value === 'spot'){
-      comments.style.backgroundColor = '#7e9c84';
-      comments.style.boxShadow = '#ebd9d9';
-      input.style.backgroundColor = '#ebd9d9';
+      input.style.backgroundColor = '#7e9c84';
+      input.style.boxShadow = '#ebd9d9';
+      bgInput.style.backgroundColor = '#ebd9d9';
       }else if(category.value === 'education'){
-        comments.style.backgroundColor = '#d1d1b5';
-        comments.style.boxShadow = '#b8abab';
-        input.style.backgroundColor = '#b8abab';
+        input.style.backgroundColor = '#d1d1b5';
+        input.style.boxShadow = '#b8abab';
+        bgInput.style.backgroundColor = '#b8abab';
       }else if(category.value === 'health'){
-        comments.style.backgroundColor = '#adccc6';
-        comments.style.boxShadow = '#e8ebc5';
-        input.style.backgroundColor = '#e8ebc5';
+        input.style.backgroundColor = '#adccc6';
+        input.style.boxShadow = '#e8ebc5';
+        bgInput.style.backgroundColor = '#e8ebc5';
       }else if(category.value === 'house'){
-          comments.style.backgroundColor = '#bdbead';
-          comments.style.boxShadow = '#c3b4d6';
-          input.style.backgroundColor = '#c3b4d6';
+          input.style.backgroundColor = '#bdbead';
+          input.style.boxShadow = '#c3b4d6';
+          bgInput.style.backgroundColor = '#c3b4d6';
         }else if(category.value === 'living'){
-          comments.style.backgroundColor = '#dbc7d9';
-          comments.style.boxShadow = '#796062';
-          input.style.backgroundColor = '#796062';
+          input.style.backgroundColor = '#dbc7d9';
+          input.style.boxShadow = '#796062';
+          bgInput.style.backgroundColor = '#796062';
         }else if(category.value === 'trip'){
-          comments.style.backgroundColor = '#cbaf9c';
-          comments.style.boxShadow = '#ac7187';
-          input.style.backgroundColor = '#ac7187';
+          input.style.backgroundColor = '#cbaf9c';
+          input.style.boxShadow = '#ac7187';
+          bgInput.style.backgroundColor = '#ac7187';
         }else if(category.value === 'others'){
-          comments.style.backgroundColor = '#929090';
-          comments.style.boxShadow = '#cac4a4'
-          input.style.backgroundColor = '#cac4a4';
+          input.style.backgroundColor = '#929090';
+          input.style.boxShadow = '#cac4a4'
+          bgInput.style.backgroundColor = '#cac4a4';
         }
 }, false);
 
