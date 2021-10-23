@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <meta name="ImforMATE">
   <link rel="icon" href="">
-  <title>ImforMATE</title>
+  <title>InforMATE</title>
 </head>
 <body>
   <header></header>
@@ -16,12 +16,14 @@
     <div class="profile">
 
       <div class="hello">
-        <h1>Hello, Mrs. Shiho.</h1>
+        <h1><span class="greeting">Good evening,</span> <span class="name">Shiho.</span></h1>
       </div><!--.hello-->
 
       <div class="profile__icon">
 
-        <div class="icon__img"></div>
+        <div class="icon__img">
+          <img class="icon__img--src" src="../src/img/choose_logo-1.png" alt="icon image" width="90px" height="100px">
+        </div><!--.icon__img-->
 
         <div class="icon__change">
         <button class="change">Change your icon</button>
@@ -31,24 +33,24 @@
 
       <div class="profile__data">
 
-        <div class="user_name">
+        <div class="user">
           <h6>User Name</h6>
-          <input type="text">
+          <p class="user__name">Shiho</p>
         </div><!--.user_name-->
 
         <div class="country">
           <h6>Country</h6>
-          <input type="text">
+          <p class="country__name">Canada</p>
         </div><!--.country-->
 
         <div class="city">
           <h6>City(optional)</h6>
-          <input type="text">
+          <p class="city__name">Vancouver</p>
         </div><!--.city-->
 
         <div class="twitter">
           <h6>Twitter(optional)</h6>
-          <input type="text">
+          <p class="twitter__name">@InforMATE_123</p>
         </div><!--.twitter-->
 
         <div class="profile__edit">
@@ -58,6 +60,101 @@
       </div><!--.profile__data-->
 
     </div><!--.profile-->
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+
+      <div class="profile__modal">
+        <div class="modal__img">
+          <img class="modal__img--src" src="../src/img/choose_logo-1.png" alt="icon image" width="90px" height="100px">
+        </div><!--.icon__img-->
+
+        <div class="icon__change">
+        <button class="change--inmodal">Change your icon</button>
+        </div><!--.icon__change-->
+
+      </div><!--.profile__icon-->
+
+      <div class="profile__data">
+
+        <div class="modal__user">
+          <h6>User Name</h6>
+          <input type="text" id="modal__user" placeholder="Shiho">
+        </div><!--.user-->
+
+        <div class="modal__country">
+          <h6>Country</h6>
+          <select name="country" id="modal__country">
+            <option value="Canada">Canada</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+            <option value="South Korea">South Korea</option>
+            <option value="France">France</option>
+          </select><!--#country-->
+        </div><!--.country-->
+
+        <div class="modal__city">
+          <h6>City(optional)</h6>
+          <input type="text" placeholder="Vancouver" id="modal__city">
+        </div><!--.city-->
+
+        <div class="modal__twitter">
+          <h6>Twitter(optional)</h6>
+          <input type="text" placeholder="@InforMATE_123" id="modal__twitter">
+        </div><!--.twitter-->
+
+        <div class="profile__edit">
+          <button class="done">Done</button>
+        </div><!--.profile__edit-->
+
+      </div><!--.profile__data-->
+
+    </div><!--.profile-->
+    
+    </div><!--.modal--hidden-->
+
+    <div class="close__concent alert">
+      <h3>⚠️ Are you really want to close?</h3>
+      <p>Your changes will be deleted. If you want to save your changes, please choose cancel button below.</p>
+
+      <div class="choose--btn">
+        <button class="close">Close</button>
+        <button class="cancel">Cancel</button>
+      </div><!--.choose--btn-->
+    </div><!--.close__concent-->
+
+    <div class="chooseyours show">
+      <button class="btn--close-choose">&times;</button>
+      <h3>Choose your icon</h3>
+      <div class="chooseyours__icon">
+        <img src="../src/img/choose_logo-1.png" alt="icon1" width="90px" height="100px">
+        <img src="../src/img/choose_logo-2.png" alt="icon2" width="110px" height="110px">
+        <img src="../src/img/choose_logo-3.png" alt="icon3" width="100px" height="100px">
+        <img src="../src/img/choose_logo-4.png" alt="icon4" width="80px" height="100px">
+        <img src="../src/img/choose_logo-5.png" alt="icon5" width="80px" height="100px">
+        <img src="../src/img/choose_logo-6.png" alt="icon6" width="80px" height="100px">
+        <img src="../src/img/choose_logo-7.png" alt="icon7" width="80px" height="100px">
+        <img src="../src/img/choose_logo-8.png" alt="icon8" width="80px" height="100px">
+        <img src="../src/img/choose_logo-9.png" alt="icon9" width="100px" height="100px">
+        <img src="../src/img/choose_logo-10.png" alt="icon10" width="100px" height="100px">
+        <img src="../src/img/choose_logo-11.png" alt="icon11" width="100px" height="100px">
+        <img src="../src/img/choose_logo-12.png" alt="icon12" width="80px" height="100px">
+        <img src="../src/img/choose_logo-13.png" alt="icon13" width="70px" height="100px">
+        <img src="../src/img/choose_logo-14.png" alt="icon14" width="70px" height="100px">
+        <img src="../src/img/choose_logo-15.png" alt="icon15" width="70px" height="100px">
+        <img src="../src/img/choose_logo-16.png" alt="icon16" width="110px" height="100px">
+        <img src="../src/img/choose_logo-17.png" alt="icon17" width="100px" height="100px">
+        <img src="../src/img/choose_logo-18.png" alt="icon18" width="70px" height="100px">
+        <img src="../src/img/choose_logo-19.png" alt="icon19" width="70px" height="100px">
+        <img src="../src/img/choose_logo-20.png" alt="icon20" width="70px" height="100px">
+        <img src="../src/img/choose_logo-21.png" alt="icon21" width="100px" height="100px">
+        <img src="../src/img/choose_logo-22.png" alt="icon22" width="70px" height="100px">
+      </div><!--.chooseyours__icon-->
+    </div><!--.chooseyours-->
 
 
   </main>
