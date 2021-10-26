@@ -84,6 +84,8 @@ $cGray: #bdbdbd;
 
     
       & .comment{
+        color: $cWhite;
+        outline: none;
         position: absolute;
         left: 0;
         width: 80%;

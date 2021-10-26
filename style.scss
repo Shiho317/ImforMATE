@@ -58,6 +58,328 @@ $cGray: #bdbdbd;
     }
   }
 
+  .join-modal{
+    position: fixed;
+    top: 10%;
+    margin: 10px;
+    padding: 30px 25px;
+    background-color: $cWhite;
+    border-radius: 30px;
+    z-index: 100;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px #07122a7e;
+
+    & .btn-close-joinmodal{
+      position: absolute;
+      right: 25px;
+      background: transparent;
+      border: none;
+      color: $cGray;
+      font-size: 30px;
+    }
+    
+    & h3{
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+
+    & .joinus{
+      font-size: 13px;
+    }
+
+    & .name--input{
+      margin-top: 50px;
+      margin-bottom: 35px;
+
+      & label{
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid $cBlack;
+        border-radius: 50px;
+
+        & .name{
+          background: transparent;
+          border: none;
+          margin-left: 29px;
+          outline: none;
+          width: 198px;
+        }
+      }
+    }
+
+    & .email--input{
+      margin-bottom: 35px;
+
+      & label{
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid $cBlack;
+        border-radius: 50px;
+
+        & .email{
+          background: transparent;
+          border: none;
+          margin-left: 32px;
+          outline: none;
+          width: 198px;
+        }
+      }
+
+      & .exist{
+        font-size: 10px;
+        color: red;
+      }
+    }
+
+    & .password--input{
+      margin-bottom: 20px;
+
+      & label{
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid $cBlack;
+        border-radius: 50px;
+
+        & .password{
+          background: transparent;
+          border: none;
+          outline: none;
+          width: 198px;
+        }
+
+      }
+      & .password__stricts{
+          font-size: 10px;
+        }
+    }
+
+    & .confirm--input{
+      margin-bottom: 20px;
+
+      & label{
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid $cBlack;
+        border-radius: 50px;
+        
+        & .confirm{
+          background: transparent;
+          border: none;
+          padding: 10px;
+          outline: none;
+          width: 260px;
+        }
+      }
+      
+      & .notmatch{
+      font-size: 10px;
+      color: red;
+      }
+    }
+
+
+
+    .signup{
+      text-align: center;
+      margin-bottom: 20px;
+
+      &--btn{
+        background-color: $cBlack;
+        border: none;
+        color: $cWhite;
+        padding: 10px;
+        width: 200px;
+        border-radius: 50px;
+
+        &:hover{
+          opacity: 0.5;
+        }
+      }
+    }
+    
+    
+
+    & .border--join{
+      border: transparent;
+      height: 2px;
+      background-color: $cBlack;
+    }
+
+    & .modal-login{
+      font-size: 10px;
+      text-align: center;
+
+      & .jump--login{
+        color: #57a0e4;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .signin-modal{
+    position: fixed;
+    top: 10%;
+    margin: 10px;
+    padding: 30px 25px;
+    background-color: $cWhite;
+    border-radius: 30px;
+    z-index: 100;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px #07122a7e;
+
+    & .btn-close-signinmodal{
+      position: absolute;
+      right: 25px;
+      background: transparent;
+      border: none;
+      color: $cGray;
+      font-size: 30px;
+    }
+
+    & h3{
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+
+    & .sign-in{
+      font-size: 13px;
+    }
+
+    & .sign-email{
+      margin-top: 50px;
+      margin-bottom: 35px;
+
+      & label{
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid $cBlack;
+        border-radius: 50px;
+
+        & .email-check{
+          background: transparent;
+          border: none;
+          margin-left: 32px;
+          outline: none;
+          width: 198px;
+        }
+      }
+    }
+
+    & .sign-password{
+      margin-bottom: 20px;
+
+      & label{
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid $cBlack;
+        border-radius: 50px;
+
+        & .password-check{
+          background: transparent;
+          border: none;
+          outline: none;
+          width: 198px;
+        }
+      }
+      
+      & .error{
+        font-size: 10px;
+        color: red;
+      }
+    }
+
+    & .login{
+      text-align: center;
+      margin-bottom: 20px;
+
+      &--btn{
+        background-color: $cBlack;
+        border: none;
+        color: $cWhite;
+        padding: 10px;
+        width: 200px;
+        border-radius: 50px;
+
+        &:hover{
+          opacity: 0.5;
+        }
+      }
+    }
+
+    & .border--signin{
+      border: transparent;
+      height: 2px;
+      background-color: $cBlack;
+    }
+
+    & .modal-signup{
+      font-size: 10px;
+      text-align: center;
+
+      & .jump--signup{
+        color: #57a0e4;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .hidden{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .success{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .correct{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 39, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 99;
+    transition: all 0.5s;
+  }
+
+  .welcome-back{
+    text-align: center;
+    & h2{
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform:translate(-50%,-50%);
+      width: 78%;
+      z-index: 101;
+      color: $cWhite;
+    }
+    & img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%,-50%);
+      width: 100%;
+      z-index: 100;
+    }
+    
+  }
+
+
   .footer{
       font-size: 12px;
       color: $cGray;

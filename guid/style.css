@@ -1,0 +1,111 @@
+/*==================for mobile========================*/
+@media screen and (max-width: 40rem) {
+  header {
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  header img {
+    top: 0;
+    z-index: 99;
+  }
+  header .next {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    color: #ffffff;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+  header .next svg {
+    position: relative;
+    top: 16px;
+    left: 5px;
+  }
+  .guide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+    overflow: hidden;
+  }
+  .guide .slide {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
+  .guide .slide h1 {
+    color: #07122a;
+    position: absolute;
+    top: 7%;
+    text-align: center;
+  }
+  .guide .slide h3 {
+    color: #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .guide .slide--1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+  }
+  .guide .slide--2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+  }
+  .guide .slide--3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+  }
+  .guide .slide--4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+  }
+  .start__btn {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border: 3px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

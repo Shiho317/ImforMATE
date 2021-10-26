@@ -155,16 +155,15 @@ const hello = document.querySelector('.greeting');
 function greeting(){
   const nowTime = new Date();
   const nowHour = nowTime.getHours();
-  console.log(nowHour);
+  console.log(typeof nowHour);
   
-
-  if(6 <= nowHour < 12){
+  if(nowHour < 12){
     hello.textContent = 'Good morning, ';
     console.log(hello.textContent);
-  }else if(12 <= nowHour < 18){
+  }else if(nowHour < 18){
     hello.textContent = 'Good afternoon, ';
     console.log(hello.textContent);
-  }else if(18 <= nowHour || 0 <= nowHour < 6){
+  }else if(nowHour < 24 || nowHour < 6){
     hello.textContent = 'Good evening, ';
     console.log(hello.textContent);
   }

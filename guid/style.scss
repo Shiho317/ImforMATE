@@ -1,0 +1,118 @@
+$cBlack: #07122a;
+$cWhite: #ffffff;
+$cGray: #bdbdbd;
+/*==================for mobile========================*/
+@media screen and (max-width: 40rem){
+
+  header{
+    text-align: center;
+    position: sticky;
+
+    & img{
+      top: 0;
+      z-index: 99;
+    }
+
+    & .next{
+      position: absolute;
+      top: 0px;
+      right: 20px;
+      color: $cWhite;
+      border: none;
+      background: transparent;
+      outline: none;
+
+      & svg{
+        position: relative;
+        top: 16px;
+        left: 5px;
+      }
+    }
+    
+  }
+
+  .guide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+    overflow: hidden;
+
+    & .slide{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    transition: transform 1s;
+
+    & h1{
+    color: $cBlack;
+    position: absolute;
+    top: 7%;
+    text-align: center;
+    }
+
+    & h3{
+    color: $cWhite;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    }
+
+    &--1{
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -99;
+    }
+
+    &--2{
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -99;
+    }
+
+    &--3{
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -99;
+    }
+
+    &--4{
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -99;
+    }
+    }
+  }
+
+  .start__btn{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border: 3px solid #ffffff;
+    background: transparent;
+    color: $cWhite;
+    box-shadow: none;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .hidden{
+    visibility: hidden;
+    opacity: 0;
+  }
+}

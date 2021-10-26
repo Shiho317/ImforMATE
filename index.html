@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/share.css">
   <link rel="stylesheet" href="style.css">
-  <meta name="ImforMATE">
-  <link rel="icon" href="">
+  <meta name="InforMATE">
+  <link rel="icon" href="src/img/InforMATE_browser-icon.JPG">
   <title>InforMATE</title>
 </head>
 <body>
@@ -16,9 +16,11 @@
     <div>
       <img class="home__img" src="src/img/home_img.png" alt="InfoMATE">
     </div>
+
     <div class="intro">
       <h1>Hey Boys and Girls,<br/>Let's help each other</h1>
       <p>Provide and collect new imformation.<br/>This could help you a lot.</p>
+
     <div class="intro__button">
       <div>
       <button class="join">Join now</button>
@@ -27,7 +29,82 @@
       <button class="signin">Sign in</button>
       </div>
     </div><!--.intro__button-->
+
     </div><!--.main__intro-->
+
+    <div class="join-modal hidden">
+      <button class="btn-close-joinmodal">&times;</button>
+      <h3>Sign Up</h3>
+      <p class="joinus">Thank you, guest.<br/>
+      Please fill this blank below to join us.</p>
+
+      <div class="name--input">
+        <label for="name">Name
+          <input class="name" type="text">
+        </label>
+      </div><!--.name--input-->
+
+      <div class="email--input">
+        <label for="email">Email
+          <input class="email" type="text">
+        </label>
+        <div class="exist"></div>
+      </div><!--.email--input-->
+      
+      <div class="password--input">
+        <label for="password">Password
+          <input class="password" type="text">
+        </label>
+        <p class="password__stricts">* Password must be at least 8 characters long, including 1 uppercase character and 1 degit.</p>
+      </div><!--.password-input-->
+
+      <div class="confirm--input">
+        <label for="confirm">
+          <input class="confirm" type="text" placeholder="Confirm(password)">
+        </label>
+        <p class="notmatch success">⚠️ Your input is incorrect with your password.</p>
+      </div><!--.confirm-input-->
+
+      <div class="signup">
+      <button class="signup--btn">Sign up</button>
+      </div><!--.signup-->
+
+      <hr class="border--join">
+      <p class="modal-login">Already have an account?  <span class="jump--login">Log in</span></p>
+      
+    </div><!--.join-modal-->
+
+    <div class="signin-modal hidden">
+      <button class="btn-close-signinmodal">&times;</button>
+      <h3>Sign In</h3>
+      <p class="sign-in">Welcome back!<br/>
+      Please fill this blank below to sign in.</p>
+
+      <div class="sign-email">
+        <label for="email-check">Email
+          <input class="email-check" type="text">
+        </label>
+      </div><!--.sign-email-->
+      
+      <div class="sign-password">
+        <label for="password-check">Password
+          <input class="password-check" type="text">
+        </label>
+        <p class="error correct">⚠️ Your email or password is not correct.</p>
+      </div><!--.sign-password-->
+
+      <div class="login">
+      <button class="login--btn">Log in</button>
+      </div><!--.login-->
+
+      <hr class="border--signin">
+      <p class="modal-signup">You don't have an account? <span class="jump--signup">Sign up</span></p>
+      
+    </div><!--.signin-modal-->
+
+    <div class="overlay hidden"></div>
+    <div class="welcome-back"></div>
+
   </main>
   <footer>
     <ul class="footer">

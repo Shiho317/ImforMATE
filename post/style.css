@@ -76,6 +76,8 @@
             box-shadow: 0 0 5px #ebd9d9;
   }
   .input__bg .input .comment {
+    color: #ffffff;
+    outline: none;
     position: absolute;
     left: 0;
     width: 80%;
