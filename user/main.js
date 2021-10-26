@@ -40,6 +40,21 @@ btnCancelAlert.addEventListener('click', closeAlert);
 
 done.addEventListener('click', closeModal);
 
+
+//change icon-color
+const iconColor = document.querySelector('#icon--color');
+const modalIconBg = document.querySelector('.modal__img');
+const iconBg = document.querySelector('.icon__img');
+
+const changeIconColor = function(e){
+  e.preventDefault();
+
+  console.log(iconColor.value);
+  modalIconBg.style.backgroundColor = iconColor.value;
+  iconBg.style.backgroundColor = iconColor.value;
+};
+
+
 //change icon
 const iconChange = document.querySelector('.change');
 const changeInModal = document.querySelector('.change--inmodal');
@@ -80,9 +95,9 @@ choose();
 
 icons.forEach(icon => {
   icon.addEventListener('click', closeChoose);
+  icon.addEventListener('click', changeIconColor);
 });
 
-//change background-color
 
 //change input
 const helloName = document.querySelector('.name');
@@ -169,3 +184,4 @@ function greeting(){
   }
 }
 setInterval(greeting());
+
