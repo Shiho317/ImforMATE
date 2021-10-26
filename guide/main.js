@@ -36,6 +36,10 @@ const slider = function(){
 
   btnNext.addEventListener('click', function(){
     btnNext.style.opacity = 0.5;
+
+    setTimeout(() => {
+      btnNext.style.opacity = 1;
+    },400);
   });
 
   btnStart.addEventListener('click', function(){

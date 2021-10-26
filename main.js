@@ -110,7 +110,8 @@ logInBtn.addEventListener('click', function(e){
   if(currentAccount.password === passwordCheck.value){
     error.classList.add('correct');
     signInModal.classList.add('hidden');
-    welcomeBack.innerHTML = `<h2>Welcome back, ${firstName}!</h2>`;
+    welcomeBack.innerHTML = `<h2>Welcome back, ${firstName}!</h2>
+    <img src="src/img/InforMATE_logo.PNG">`;
     setTimeout(() => {
       location.href = 'user/index.html';
     }, 1000);
@@ -160,7 +161,7 @@ signUpBtn.addEventListener('click', function(e){
       welcomeBack.innerHTML = `<h2>Welcome, ${firstName}!<br/>Thank you for join!</h2>
       <img src="src/img/InforMATE_logo.PNG">`;
       setTimeout(() => {
-      location.href = 'guid/index.html';
+      location.href = 'guide/index.html';
       }, 1000);
 
     }else{
