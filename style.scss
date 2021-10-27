@@ -136,6 +136,7 @@ $cGray: #bdbdbd;
     }
 
     & .password--input{
+      position: relative;
       margin-bottom: 20px;
 
       & label{
@@ -149,6 +150,14 @@ $cGray: #bdbdbd;
           border: none;
           outline: none;
           width: 198px;
+
+          &__lock{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: transparent;
+            border: none;
+          }
         }
 
       }
@@ -273,6 +282,7 @@ $cGray: #bdbdbd;
     }
 
     & .sign-password{
+      position: relative;
       margin-bottom: 20px;
 
       & label{
@@ -286,6 +296,14 @@ $cGray: #bdbdbd;
           border: none;
           outline: none;
           width: 198px;
+
+          &__lock{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: transparent;
+            border: none;
+          }
         }
       }
       
@@ -348,6 +366,10 @@ $cGray: #bdbdbd;
     opacity: 0;
   }
 
+  .hide{
+    visibility: hidden;
+    opacity: 0;
+  }
   
   .overlay {
     position: fixed;

@@ -115,6 +115,7 @@
     color: red;
   }
   .join-modal .password--input {
+    position: relative;
     margin-bottom: 20px;
   }
   .join-modal .password--input label {
@@ -128,6 +129,13 @@
     border: none;
     outline: none;
     width: 198px;
+  }
+  .join-modal .password--input label .password__lock {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
   }
   .join-modal .password--input .password__stricts {
     font-size: 10px;
@@ -228,6 +236,7 @@
     width: 198px;
   }
   .signin-modal .sign-password {
+    position: relative;
     margin-bottom: 20px;
   }
   .signin-modal .sign-password label {
@@ -241,6 +250,13 @@
     border: none;
     outline: none;
     width: 198px;
+  }
+  .signin-modal .sign-password label .password-check__lock {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
   }
   .signin-modal .sign-password .error {
     font-size: 10px;
@@ -285,6 +301,10 @@
     opacity: 0;
   }
   .correct {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .hide {
     visibility: hidden;
     opacity: 0;
   }
